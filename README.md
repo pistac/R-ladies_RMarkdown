@@ -3,7 +3,7 @@ This repository contains all the files used to create a presentation on using RM
 
 ## To try RMarkdown
 
-As of RStudio v0.98.932, RStudio comes with all the necessary packages to run RMarkdown. If you have a previous version or don't use RStudio, you will need to install pandoc and RMarkdown separately as described [here](https://github.com/rstudio/rmarkdown#installation).
+As of RStudio v0.98.932, RStudio comes with all the necessary packages to run RMarkdown. If you have a previous version or don't use RStudio, you will need to install pandoc and RMarkdown separately as described [here](https://github.com/rstudio/rmarkdown#installation). Also, check that you have the knitr package installed in your version of R. If not, run 'install.packages("knitr")'.
 
 ## Useful documentation
 
