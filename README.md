@@ -1,9 +1,14 @@
 # R-ladies_RMarkdown
+
 This repository contains all the files used to create a presentation on using RMarkdown for doing reproducible research. The presentation was given at the R-ladies Dublin meetup on 27/03/2018. This presentation is based on a presentation previously given by myself and [Frank Loesche](https://www.cognovo.eu/people/research-fellows/frank-loesche.php), on 08/02/2017, at a *Coding Lunch* session in the [School of Psychology](https://www.plymouth.ac.uk/schools/psychology/) of Plymouth University. 
 
 ## To try RMarkdown
 
 As of RStudio v0.98.932, RStudio comes with all the necessary packages to run RMarkdown. If you have a previous version or don't use RStudio, you will need to install pandoc and RMarkdown separately as described [here](https://github.com/rstudio/rmarkdown#installation). Also, check that you have the knitr package installed in your version of R. If not, run 'install.packages("knitr")'.
+
+## What's in this repository
+
+The slides of the presentation in .rmd, .pdf and .docx formats are called "R-ladies-rmarkdown". Within the slides there are references to other files contained in this repository: there is an example bibliography in .bib format ("MyBibliography.bib"), a file with some basic Markdown syntax in .md, .pdf and .docx ("BasicMdSyntax"), a file with some basic RMarkdown syntax in .rmd, .pdf and .docx ("BasicRMD"). Finally, there are a few example images used in the presentation to show how different citation styles look like.
 
 ## Useful documentation
 
