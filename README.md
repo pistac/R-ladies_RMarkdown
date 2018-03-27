@@ -55,7 +55,7 @@ The slides of the presentation in .rmd and .pdf formats are called "R-ladies-rma
 
 ### Useful packages
 
-- [Table method 1, looks interesting] (https://github.com/renkun-ken/formattable)
+- [Table method 1, looks interesting](https://github.com/renkun-ken/formattable)
 - [Table method 2, with a few predefined format options](http://rpubs.com/jalapic/simpletable2)
 - [Pander, interesting tool for converting R objects into rmarkdown](http://rapporter.github.io/pander/)
 - [sjplot, nice collection of functions to visualise various R outputs, including regression tables](https://github.com/strengejacke/sjPlot)
