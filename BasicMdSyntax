@@ -33,9 +33,9 @@ Links can be added in text like this: [click here](http://www.blackbeardsteapart
 
 Images are basically links, but they have to be also separated from the main text by an empty line before and after:
 
-![A super fluffy cat](images/fluffycat.jpg)
+![A super fluffy cat](fluffycat.jpg)
 
-![Kitty and bunny](images/catbunny.jpg)
+![Kitty and bunny](catbunny.jpg)
 
 Tables can be written with -- and || symbols:
 
