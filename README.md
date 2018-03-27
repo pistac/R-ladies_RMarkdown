@@ -50,6 +50,14 @@ The slides of the presentation in .rmd and .pdf formats are called "R-ladies-rma
 - [Literate Programming (original article)](https://doi.org/10.1093/comjnl/27.2.97)
 - [Argument to create reproducible research](https://www.washingtonpost.com/news/speaking-of-science/wp/2015/08/28/no-sciences-reproducibility-problem-is-not-limited-to-psychology/)
 - [Replication Crisis](https://en.wikipedia.org/wiki/Replication_crisis)
-
+-[Example of Swiss data journalism](http://srfdata.github.io/)
 - [Other approach to writing Articles (rticles)](https://github.com/rstudio/rticles)
+
+### Useful packages
+
+- [Table method 1, looks interesting] (https://github.com/renkun-ken/formattable)
+- [Table method 2, with a few predefined format options](http://rpubs.com/jalapic/simpletable2)
+- [Pander, interesting tool for converting R objects into rmarkdown](http://rapporter.github.io/pander/)
+- [sjplot, nice collection of functions to visualise various R outputs, including regression tables](https://github.com/strengejacke/sjPlot)
+- [stargazer, to create tables in tex or html format to export to other documents](https://www.r-bloggers.com/stargazer-package-for-beautiful-latex-tables-from-r-statistical-models-output/)
 
