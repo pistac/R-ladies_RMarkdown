@@ -61,7 +61,7 @@ It can be written in any text editor!
 
 # Markdown syntax
 
-See [`examples/BasicMDSyntax.md`](../examples/BasicMDSyntax.md) and relative outputs in [`.pdf`](../examples/BasicMDSyntax.pdf) and [`.docx`](../examples/BasicMDSyntax.docx).
+See BasicMDSyntax.md and relative outputs in pdf and .docx.
 
 * headers
 * emphasis (**bold**, *italics*)
@@ -100,25 +100,9 @@ See [`examples/BasicMDSyntax.md`](../examples/BasicMDSyntax.md) and relative out
 
 ***
 
-# Pandoc 
-
-- eg
-    - from rST to LaTeX
-    - from Markdown to pdf
-    - from html to markdown
-- usage (try it inside [`./examples/`](../examples/) directory^[open terminal, change directory to [`./examples/`](../examples/), run commands in terminal])
-    - `pandoc Input.md --output Output.pdf`
-    
-    - `pandoc --from html --to markdown Input.html --output Output.md`
-    - `pandoc --from markdown --to latex Input.md --output Output.pdf`
-    - `pandoc --from markdown --to docx Input.md --output Output.docx`
-    
-
-***
 
 # Pandoc - additional features
 
-- extendable by *filters*
 - settings in YAML^[Yet Another Markup Language] header
     - title, author, date
     - template
@@ -126,12 +110,10 @@ See [`examples/BasicMDSyntax.md`](../examples/BasicMDSyntax.md) and relative out
     
 ~~~
 ---
-title: Mark ups and downs
-author:
-- Ilaria Torre
-- Frank Loesche
-tags: markup, markdown, talk
-bibliography: examples/MyBibliography.bib
+title: R-ladies Rmarkdown
+author: - Ilaria Torre
+tags: markup, markdown, R, talk
+bibliography: MyBibliography.bib
 ---
 ~~~
 
@@ -149,17 +131,15 @@ bibliography: examples/MyBibliography.bib
 
 # References in MD file
 
-See [`examples/References.md`](../examples/References.md)
+See References.md and its outputs
 
 ***
 
 # Bibliography setup in text file
 
 
-- bibliography in same path 
-    - [`examples/MyBibliography.bib`](../examples/MyBibliography.bib)
+- bibliography in same path as MD file
 - add YAML header
-    - see examples at [`examples/ReferenceTest.Rmd`](../examples/ReferenceTest.Rmd)
 
 ~~~
 ---
@@ -216,7 +196,7 @@ Markdown vs. RMarkdown
 - another layer to the flow: knitr
 - Rmd --{R(knitr)}--> Markdown --{pandoc}--> ...
 
-See [`examples/BasicRMD.rmd`](../examples/BasicRMD.rmd)
+See BasicRMD.rmd
 
 ***
 
@@ -227,7 +207,6 @@ See [`examples/BasicRMD.rmd`](../examples/BasicRMD.rmd)
 - compiler creates output format
 - code blocks can run separately (fast turnaround)
 
-![R code chunk and its replacement](img/code2plot.png)
 
 ***
 
@@ -236,73 +215,13 @@ See [`examples/BasicRMD.rmd`](../examples/BasicRMD.rmd)
 The "quick'n'dirty" way:
 
 1. Download LaTex template from journal
-2. Export text to .tex
+2. Export MD/RMD text to .tex
 3. Copy all .tex document and paste into template[^1]
 4. Compile pdf document in perfect format
 
-See: FinalMD.rmd
 
 [^1]: Note: you will probably need to change some of the parameters in the journal template before it works out. Here Google will be your best friend!
 
-# "Hack" template
-
-1. download template from publisher (eg [APA](http://www.ctan.org/tex-archive/macros/latex/contrib/apa6/samples))
-2. modify everything above `\begin{document}` according to your needs
-3. replace document content with `$body$`
-4. add template to YAML of Rmd:
-
-~~~
-...
-output:
-  pdf_document:
-    template: "apa-simple.template"
----
-~~~
-
-see [`examples/apa-simple.template`](../examples/apa-simple.template) and [`examples/exampleArticle.Rmd`](../examples/exampleArticle.Rmd)
-
-***
-
-# Slightly advanced hack
-
-1. follow previous steps 1 to 4
-2. modify other elements in template with YAML variables:
-
-~~~
-\keywords{APA style, demonstration}
-~~~
-
-with 
-
-~~~
-$if(keywords)$
-\keywords{$for(keywords)$$keywords$$sep$, $endfor$}
-$endif$
-~~~
-
-see [`examples/apa.template`](../examples/apa.template) and [`examples/exampleArticle.Rmd`](../examples/exampleArticle.Rmd)
-
-***
-
-# Sweave
-
-- Literate Programming for LaTeX
-- Workflow:
-    - Rnw --{R(knitr)}--> LaTeX
-    - LaTeX --{pdflatex}--> pdf
-
-~~~
-\section{Nomal LaTex document}
-
-<<plot, echo=FALSE, warning=FALSE>>=
-print( ggplot(df, aes(x=RT)) + geom_density() )
-@
-
-Here comes more LaTeX
-~~~
-
-
-***
 
 # Why bother?
 
@@ -324,46 +243,9 @@ Here comes more LaTeX
 
 # Links
 
-The most recent links are in the [README.md](../README.md).
+The most recent links are in the README.
 
 
 ***
 
-# Backup
-
-***
-
-## 1970's TeX
-
-Developed in the late 1970's to typeset books.
-
-~~~
-\font\xmplbx = cmbx10 scaled \magstephalf
-\leftline{\xmplbx \TeX: typesetting system}
-\vglue .5\baselineskip
-Programming language that is 
-specialised in digital typesets.
-\item{1.} Particular good for mathematical formulas,
-\item{2.} allows macro definition
-\bye
-~~~
-
-- `troff` / `groff` are other examples for Markup Languages
-
-***
-
-## BTW: WYSIWYG
-
-While 1990's WYSIWYG word processors thought it would be a good idea to use hidden binary (=non-readable) markup inside document formats such as `.doc`, they now internally use readable markup. Just rename a `.docx` file to `.zip`, open the archive and look at the file `./word/document.xml`:
-
-~~~
-<w:r>
-  <w:t xml:space="preserve">This is </w:t>
-</w:r>
-<w:r>
-  <w:rPr><w:i/><w:iCs/></w:rPr><w:t>italic</w:t>
-</w:r>
-~~~
-
-*Not meant to be read by humans, but in the worst case you can.*
 
