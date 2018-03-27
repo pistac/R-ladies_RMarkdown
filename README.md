@@ -8,7 +8,7 @@ As of RStudio v0.98.932, RStudio comes with all the necessary packages to run RM
 
 ## What's in this repository
 
-The slides of the presentation in .rmd, .pdf and .docx formats are called "R-ladies-rmarkdown". Within the slides there are references to other files contained in this repository: there is an example bibliography in .bib format ("MyBibliography.bib"), a file with some basic Markdown syntax in .md, .pdf and .docx ("BasicMdSyntax"), a file with some basic RMarkdown syntax in .rmd, .pdf and .docx ("BasicRMD"). Finally, there are a few example images used in the presentation to show how different citation styles look like.
+The slides of the presentation in .rmd and .pdf formats are called "R-ladies-rmarkdown". Within the slides there are references to other files contained in this repository: there is an example bibliography in .bib format ("MyBibliography.bib"), a file with some basic Markdown syntax in .md, .pdf and .docx ("BasicMdSyntax"), a file with some basic RMarkdown syntax in .rmd, .pdf and .docx ("BasicRMD"). Finally, there are a few example images used in the presentation to show how different citation styles look like.
 
 ## Useful documentation
 
