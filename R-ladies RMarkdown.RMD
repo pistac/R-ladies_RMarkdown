@@ -148,7 +148,7 @@ bibliography: MyBibliography.bib
 ---
 ~~~
 
-![citation](img/cite1.png)
+![citation](cite1.png)
 
 ***
 
@@ -166,7 +166,7 @@ csl: apa.csl
 ---
 ~~~
 
-![citation](img/cite2.png)
+![citation](cite2.png)
 
 ***
 
@@ -182,7 +182,7 @@ csl: ieee.csl
 ---
 ~~~
 
-![citation](img/cite3.png)
+![citation](cite3.png)
 
 
 
