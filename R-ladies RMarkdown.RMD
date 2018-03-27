@@ -111,7 +111,7 @@ See BasicMDSyntax.md and relative outputs in pdf and .docx.
 ~~~
 ---
 title: R-ladies Rmarkdown
-author: - Ilaria Torre
+author: Ilaria Torre
 tags: markup, markdown, R, talk
 bibliography: MyBibliography.bib
 ---
